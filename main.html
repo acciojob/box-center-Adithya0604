@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <title>Center Box</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f0f0f0;
+      position: relative;
+    }
 
+    .center-box {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		justify-content: center;
+		align-items: center;
+		background-color:lightblue;
+		width:200px;
+		height:200px;
+		border: 3px solid black;
+		display:flex;
+	}
+
+    .center-box p {
+      color: purple;
+      font-weight: bold;
+	  font-family:sens ;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="center-box">
+    <p>This is center</p>
+  </div>
 
 </body>
-
 </html>
